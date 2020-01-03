@@ -9,7 +9,7 @@ type Stat struct {
 func (s *Stat) add(k string, v []byte) {
 	s.Count += 1
 	s.KeySize += int64(len(k))
-	s.ValueSize += int64(len(len(v)))
+	s.ValueSize += int64(len(v))
 }
 
 func (s *Stat) del(k string, v []byte) {
